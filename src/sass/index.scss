@@ -1,0 +1,8 @@
+@import "variables";
+@import "~nprogress/nprogress";
+
+#nprogress {
+    .bar {
+        height: $nprogress-bar-height;
+    }
+}

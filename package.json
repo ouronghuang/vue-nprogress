@@ -1,0 +1,41 @@
+{
+    "name": "vue-nprogress-orh",
+    "description": "Vue nprogress plugin",
+    "keywords": [
+        "vue",
+        "nprogress",
+        "vue-nprogress"
+    ],
+    "version": "1.0.0",
+    "main": "./dist/js/index.js",
+    "style": "./dist/css/index.css",
+    "sass": "./src/sass/index.scss",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ouronghuang/vue-nprogress"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "laravel-mix": "^4.1.2",
+        "resolve-url-loader": "3.1.0",
+        "sass": "^1.17.2",
+        "sass-loader": "7.*",
+        "vue": "^2.6.10",
+        "vue-template-compiler": "^2.6.10",
+        "nprogress": "^0.2.0"
+    },
+    "author": "orh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ouronghuang/vue-nprogress/issues"
+    },
+    "homepage": "https://github.com/ouronghuang/vue-nprogress"
+}

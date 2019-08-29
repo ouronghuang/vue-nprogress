@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>vue-nprogress</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/index.css" rel="stylesheet">
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app" v-cloak>
+    <div class="p-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-5">
+                <div class="card p-3">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                @click="handleStart()">
+                                ON
+                            </button>
+                        </div>
+                        <div class="col">
+                            <code>this.$nprogress.start()</code>
+                            <small class="text-secondary">显示进度</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                                @click="handleSet()">
+                                ON
+                            </button>
+                        </div>
+                        <div class="col">
+                            <code>this.$nprogress.set(0.4)</code>
+                            <small class="text-secondary">设置进度</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <button
+                                type="button"
+                                class="btn btn-outline-info"
+                                @click="handleInc()">
+                                ON
+                            </button>
+                        </div>
+                        <div class="col">
+                            <code>this.$nprogress.inc()</code>
+                            <small class="text-secondary">增加进度</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <button
+                                type="button"
+                                class="btn btn-outline-success"
+                                @click="handleDone()">
+                                ON
+                            </button>
+                        </div>
+                        <div class="col">
+                            <code>this.$nprogress.done()</code>
+                            <small class="text-secondary">关闭进度</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="../dist/js/index.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        methods: {
+            handleStart() {
+                this.$nprogress.start();
+            },
+            handleSet() {
+                this.$nprogress.set(0.4);
+            },
+            handleInc() {
+                this.$nprogress.inc();
+            },
+            handleDone() {
+                this.$nprogress.done();
+            },
+        }
+    });
+</script>
+</body>
+</html>
