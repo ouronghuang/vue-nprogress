@@ -1,12 +1,12 @@
 {
-    "name": "vue-nprogress-orh",
+    "name": "@orh/vue-nprogress",
     "description": "Vue nprogress plugin",
     "keywords": [
         "vue",
         "nprogress",
         "vue-nprogress"
     ],
-    "version": "1.0.0",
+    "version": "2.0.0",
     "main": "./dist/js/index.js",
     "style": "./dist/css/index.css",
     "sass": "./src/sass/index.scss",

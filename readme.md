@@ -1,4 +1,15 @@
-## vue-nprogress
+<h1 align="center">
+    vue-nprogress
+</h1>
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/@orh/vue-nprogress">
+        <img alt="npm" src="https://img.shields.io/npm/v/@orh/vue-nprogress">
+    </a>
+    <a href="https://github.com/ouronghuang/vue-nprogress">
+        <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/ouronghuang/vue-nprogress">
+    </a>
+</p>
 
 进度条
 
@@ -18,21 +29,21 @@
 1. 安装
 
 ```
-yarn add vue-nprogress-orh --dev
+yarn add @orh/vue-nprogress --dev
 ```
 
 2. 引入 js
 
 ```
-import vueNProgress from 'vue-nprogress-orh';
+import VueNProgress from '@orh/vue-nprogress';
 
-Vue.use(vueNProgress);
+Vue.use(VueNProgress);
 ```
 
 3. 引入样式
 
 ```
-@import "~vue-nprogress-orh/dist/css/index";
+@import "~@orh/vue-nprogress/dist/css/index";
 ```
 
 ## 使用
