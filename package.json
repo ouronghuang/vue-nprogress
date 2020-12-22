@@ -6,7 +6,7 @@
         "nprogress",
         "vue-nprogress"
     ],
-    "version": "3.0.0",
+    "version": "3.0.1",
     "main": "./dist/js/vue-nprogress.js",
     "style": "./dist/css/vue-nprogress.css",
     "sass": "./src/sass/vue-nprogress.scss",

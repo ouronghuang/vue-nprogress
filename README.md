@@ -18,7 +18,7 @@
 
 ![examples](examples/images/1.png)
 
-## 常规
+## 通过链接
 
 ```html
 <link href="<path>/dist/css/vue-nprogress.css" rel="stylesheet">
@@ -33,27 +33,47 @@
 
 1. 安装
 
-```
-yarn add @orh/vue-nprogress --dev
+```shell
+$ yarn add @orh/vue-nprogress --dev
 ```
 
-2. 引入 js
+2. 常规
 
+- `main.js`
+
+```javascript
+import Vue from 'vue';
+import VueNProgress from '@orh/vue-nprogress';
+import '@orh/vue-nprogress/dist/css/vue-nprogress.css';
+import App from './App.vue';
+
+Vue.use(VueNProgress);
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+});
 ```
+
+3. Laravel
+
+- `resources/js/app.js`
+
+```javascript
 import VueNProgress from '@orh/vue-nprogress';
 
 Vue.use(VueNProgress);
 ```
 
-3. 引入样式
+- `resources/sass/app.scss`
 
-```
+```scss
 @import "~@orh/vue-nprogress/dist/css/vue-nprogress.css";
 ```
 
 ## 使用
 
-```
+```javascript
 // 显示进度
 this.$nprogress.start();
 
